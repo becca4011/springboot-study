@@ -2,11 +2,9 @@ package springboot.book.service.posts;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
 import springboot.book.domain.posts.Posts;
 import springboot.book.domain.posts.PostsRepository;
-import springboot.book.web.PostsResponseDto;
+import springboot.book.web.dto.PostsResponseDto;
 import springboot.book.web.dto.PostsSaveRequestDto;
 import springboot.book.web.dto.PostsUpdateRequestDto;
 

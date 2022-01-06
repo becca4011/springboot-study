@@ -1,4 +1,4 @@
-package springboot.book.web;
+package springboot.book.web.dto;
 
 import lombok.Getter;
 import springboot.book.domain.posts.Posts;

@@ -2,6 +2,7 @@ package springboot.book.web;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import springboot.book.service.posts.PostsService;
+import springboot.book.web.dto.PostsResponseDto;
 import springboot.book.web.dto.PostsSaveRequestDto;
 import springboot.book.web.dto.PostsUpdateRequestDto;
 
@@ -20,7 +21,7 @@ public class PostsApiController {
         return postsService.update(id, requestDto);
     }
 
-    @GetMapping
+    @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById (@PathVariable Long id) {
         return postsService.findById(id);
     }
