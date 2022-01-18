@@ -2,6 +2,7 @@ package springboot.book.web.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 import springboot.book.domain.posts.Posts;
 
 import java.time.LocalDateTime;
@@ -13,7 +14,7 @@ public class PostsListResponseDto {
     private String author;
     private LocalDateTime modifiedDate;
 
-    public PostsListResponseDto(Posts entity) {
+    public PostsListResponseDto(@NotNull Posts entity) {
         this.id = entity.getId();
         this.title = entity.getTitle();
         this.author = entity.getAuthor();
